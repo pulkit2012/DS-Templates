@@ -13,8 +13,9 @@ public class LinkedList {
     public static void MyMethod(){
         //Your Method
     }
-
-    static void push(int new_data) {
+    
+    // changing the method name from push to add
+    static void add(int new_data) {
         Node new_node = new Node();
         new_node.data = new_data;
         new_node.next = head;
@@ -29,14 +30,14 @@ public class LinkedList {
         System.out.println();
     }
     public static void main(String[] args) {
-        push(1);
-        push(2);
-        push(3);
-        push(4);
-        push(3);
-        push(2);
-        push(1);
-        // push(5);
+        add(1);
+        add(2);
+        add(3);
+        add(4);
+        add(3);
+        add(2);
+        add(1);
+        // add(5);
         System.out.println("Given linked list ");
         printList(head);
         MyMethod();
